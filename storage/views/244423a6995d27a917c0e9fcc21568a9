@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php $__env->startSection('head'); ?>
+		<meta charset="utf-8">
+		<title><?php echo $__env->yieldContent('pagetitle'); ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="<?php echo asset('css/privacy.css'); ?>" />
+		<?php echo $__env->yieldSection(); ?>
+	</head>
+
+	<body>
+		<?php echo $__env->yieldContent('main'); ?>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<?php $__env->startSection('pagetitle', $heading); ?>
+
+
+<?php $__env->startSection('head'); ?>
+@parent
+<meta name="description" content="">
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('header'); ?>
+<header id="side">
+    <h1><?php echo Lang::get('general.title'); ?></h1>
+    <small><?php echo Lang::get('general.sub-title'); ?></small>
+    <h2 class="blue big"><?php echo $heading; ?></h2>
+    <p class="result"><?php echo $sub1; ?></p>
+</header>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('main'); ?>
+<section id="page">
+    <h2 class="title"><?php echo Lang::get('general.wait'); ?></h2>
+    <a class="button-tweet" href="http://twitter.com/home/?status=<?php echo $tweet; ?>" target="_blank">Tweet</a>
+</section>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('pagescript'); ?>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="<?php echo asset('js/vendor/jquery-1.10.1.min.js'); ?>"><\/script>')</script>
+
+<script src="<?php echo e(asset('js/plugins.js')); ?>"></script>
+<script src="<?php echo e(asset('js/main.js')); ?>"></script>
+<?php if(isset($script)): ?>
+<script>
+$(function() {
+    <?php foreach($script as $s): ?>
+       <?php echo $s; ?>
+
+    <?php endforeach; ?>
+});
+</script>
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layout.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
