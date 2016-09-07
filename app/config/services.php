@@ -15,8 +15,8 @@ return array(
 	*/
 
 	'mailgun' => array(
-		'domain' => env('MAILGUN_DOMAIN'),
-		'secret' => env('MAILGUN_SECRET'),
+		'domain' => getenv('MAILGUN_DOMAIN'),
+		'secret' => getenv('MAILGUN_SECRET'),
 	),
 
 	'mandrill' => array(

@@ -80,6 +80,6 @@ Form::macro('idcCheckbox', function($section,$q,$page){
 	}
 	$html.='
 		</fieldset>
-		<button class="btn btn-primary pull-right btn-lg" type="submit">'.Lang::get('general.next').' <i class="icon-arrow_right"></i></button></button>';
+		<button class="btn btn-primary pull-right btn-lg" type="submit">'.Lang::get('general.next').' <i class="fa fa-arrow-right"></i></button></button>';
 	return $html;
 });

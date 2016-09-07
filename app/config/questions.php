@@ -162,7 +162,7 @@ return array(
                 'questions' => array(
                     'b5'=>array(
                         'type'=>'checkbox',
-                        'question'=>'What are the primary business challenges that your company is facing in 2015? Select all that apply',
+                        'question'=>'What are the primary business challenges that your company is facing in 2016? Select all that apply',
                         'name'=>'b5',
                         'options'=>array(
                             array(
@@ -267,7 +267,7 @@ return array(
                     )
                 ),
                 'report' => array(
-                    'text'=>'IDC estimates that ~40% of all new servers sold in Europe in 2015 were virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
+                    'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
                 )
             ),

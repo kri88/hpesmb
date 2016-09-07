@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => env('MAILGUN_PASS'),
+	'password' => getenv('MAILGUN_PASS'),
 
 	/*
 	|--------------------------------------------------------------------------

@@ -1,10 +1,10 @@
 <?php
 
 return array(
-    'report'=>'Your Tech Fitness Report',
+    'report'=>'Your Agil-IT-y Report',
     'ass'=>'In association with',
 	'hi'=>'Hi',
-	'promise'=>'As promised, here\'s the link to download your TechFitness report. This breaks down your performance by category and helps you benchmark yourself against other organisations operating within EMEA',
+	'promise'=>'As promised, here\'s the link to download your Agil-IT-y report. This breaks down your performance by category and helps you benchmark yourself against other organisations operating within EMEA',
 	'download'=>'Download now',
 	'digest'=>'Also, once you\'ve digested the report why not vist',
 	'business'=>'HP Busines Ready',

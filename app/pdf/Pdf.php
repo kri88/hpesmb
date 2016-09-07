@@ -311,9 +311,9 @@ class Pdf extends \Maxxscho\LaravelTcpdf\LaravelTcpdf {
 		$this->SetXY($rightX+7,$this->getY()+28);
 		
 		$this->SetFont('helvetica_condensed', '', 8);
-		$this->MultiCell(15, 5, Lang::get('report.digital-readiness'), 0, 'C', 0, 0, '', '', true);
-        $this->MultiCell(15, 5, Lang::get('report.infrastructure-foundation'), 0, 'C', 0, 0, '', '', true);
-        $this->MultiCell(15, 5, Lang::get('report.it-business-synergy'), 0, 'C', 0, 0, '', '', true);
+		$this->MultiCell(25, 5, Lang::get('report.digital-readiness'), 0, 'C', 0, 0, '', '', true);
+        $this->MultiCell(25, 5, Lang::get('report.infrastructure-foundation'), 0, 'C', 0, 0, '', '', true);
+        $this->MultiCell(25, 5, Lang::get('report.it-business-synergy'), 0, 'C', 0, 0, '', '', true);
 		//$this->SetY($this->getY()+23);
 		$this->resetText();
 		
