@@ -90,7 +90,7 @@ return array(
 	|
 	*/
 
-	'key' => getenv('APP_KEY'),//'an3Y12oMSNL2tKHFcBnyc8UuGjAVd7oa',//getenv('APP_KEY'),
+	'key' => 'an3Y12oMSNL2tKHFcBnyc8UuGjAVd7oa',//getenv('APP_KEY'),
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 

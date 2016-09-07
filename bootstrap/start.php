@@ -23,10 +23,12 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
-$env = $app->detectEnvironment(function()
-{
-    return getenv('APP_ENV') ?: 'production';
-});
+$env = $app->detectEnvironment(array(
+
+	'production' => array('scenic-reef'),
+	'local' => array('homestead','.local'),
+
+));
 /*
 $env = $app->detectEnvironment(array(
 
