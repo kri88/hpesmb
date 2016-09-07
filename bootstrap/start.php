@@ -23,13 +23,10 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
-Dotenv::load(__DIR__ .'/../');
-$env = $app->detectEnvironment(
-    function()
-    {
-        return getenv('APP_ENV');
-    }
-);
+$env = $app->detectEnvironment(function()
+{
+    return getenv('APP_ENV') ?: 'production';
+});
 /*
 $env = $app->detectEnvironment(array(
 
