@@ -23,13 +23,25 @@ $app = new Illuminate\Foundation\Application;
 | given environment, then we will automatically detect it for you.
 |
 */
-
+$env = $app->detectEnvironment( function(){
+    try {
+        if (($env = getenv('APP_ENV')) === false) {
+            $dotenv = new Dotenv\Dotenv(__DIR__.'/../');
+            $dotenv->load();
+            $env = getenv('APP_ENV');
+        }
+        return $env;
+    } catch (Exception $e) {
+        return 'local';    
+    }
+});
+/*
 $env = $app->detectEnvironment(array(
 
 	'production' => array('scenic-reef'),
 	'local' => array('homestead','.local'),
 
-));
+));*/
 
 /*
 |--------------------------------------------------------------------------
